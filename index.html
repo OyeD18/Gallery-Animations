@@ -2,52 +2,36 @@
 <html lang="en-CA">
   <head>
     <meta charset="utf-8">
-    <title>The Gallery2</title>
+    <title>Animations</title>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Italianno&display=swap" rel="stylesheet">
-    <style>
+
+        <style>
       body {
         color: #666666;
         background-color: #FDC56A;
-        background-position: center;
-        margin: 0px;
-        font-family: 'Indie Flower', cursive;
+        margin: 0;
+        font-family: 'Indie Flower', cursive; 
         text-align: center;
       }
+
       .wrapper {
         background-color: #FFF4E3;
-        width: 92%;
+        width: 92%;   
         max-width: 1200px;
-        margin: 20px auto;
-        padding: 20px;
-        border-radius: 10px;
+        margin: 20px auto;       
+        padding: 20px;           
+        border-radius: 10px; 
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      }
-
-      #header {
-        height: auto;
-        background-color: #FFF4E3;
-      }
-
-      h1 {
-        margin: 10px 0;
       }
 
       .italianno {
         font-family: 'Italianno', cursive;
-        font-size: 8em;
+        font-size: 6em;
         font-weight: 300;
-        margin: 0;
-/*         border: 5px solid #000; */
-      }
-      
-      #nav {
-        clear: both;
-        padding: 46.5 0;
-        margin-top: 46.5px;
+        margin: 20px 0;
       }
 
-      /* Navigation bar */
       #nav ul {
         border-top: 2px solid #000;
         border-bottom: 2px solid #000;
@@ -76,135 +60,57 @@
         color: #FDC56A;
       }
 
-      /* Introduction */
-      .introduction {
-        margin: 40px 0;
+      .image-container img {
+        width: 70%;
+        height: auto;
+        border: 2px solid #000;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin: 7;
       }
 
-      .introduction p {
-        font-size: 1.2em;
-        line-height: 1.6em;
-        margin: 0 20px;
+      .image-container img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.3);
       }
-
-      /* Section titles */
-      .section-title {
-        font-size: 1.5em;
-        margin: 30px 0 10px;
-        font-weight: bold;
-      }
-
-      /* Section separator */
-      .separator {
-        border: none;
-        border-top: 2px solid #333; /* Solid line with desired color */
-        margin: 30px 0; /* Adjust spacing above and below */
-      }
-
-      /* Hobbies and Contact Me sections */
-      .hobbies, .contact-me {
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        flex-wrap: wrap;
-      }
-
-      .hobbies div, .contact-me div {
-        text-align: center;
-        margin: 10px;
-      }
-
-      .hobbies img, .contact-me img {
-        width: 50px;
-        height: 50px;
-        margin-bottom: 10px;
-      }
-
-      /* Styling for the header image */
-      #header img {
-        float: right;
-        width: 50%; 
-        max-width: 150px;
-        margin: -7.6% 24.25%;
-        padding: 0;
-        border-radius: 0px;
-/*         border: 5px solid #000; */
-        vertical-align: bottom;  /* Ensures the image aligns with the bottom of the text */
-        
-      }
-
     </style>
   </head>
   <body>
     <div class="wrapper">
+      <!-- Nav Bar -->
+      <div id="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Illustrations</a></li>
+          <li><a href="#">UI Design</a></li>
+          <li><a href="#">3D Modelling</a></li>
+          <li><a href="#">Animations</a></li>
+        </ul>
+      </div>
+
       <!-- Header -->
       <div id="header">
-        <h1>Dolapo Ajiboye</h1>
-        <h1 class="italianno">Portfolio</h1>   
-        <!-- Add your image with float -->
-        <img src="hand.png" alt="hand">
-        <div id="nav">
-          <ul>
-            <li><a href="#">Illustrations</a></li>
-            <li><a href="#">UI Design</a></li>
-            <li><a href="#">3D Modeling</a></li>
-            <li><a href="#">Animations</a></li>
-          </ul>
-        </div>
+        <h1 class="italianno">Animations</h1>
       </div>
-      
-      <!-- Introduction -->
-      <section class="introduction">
-        <div class="separator"></div>
-        <h2>Hello!</h2>
-        <p>
-          My name is Oyedolapo Ajiboye, but you can call me Dolapo. 
-          I'm a second-year University of Waterloo student studying Global Business and Digital Arts (GBDA). 
-          I'm passionate about illustration and graphic design, and always ready to work with others with similar interests.
-          Welcome to my portfolio.
-        </p>
-        <div class="separator"></div>
-      </section>
-      
-      <!-- Hobbies Section -->
-      <section>
-        <h2 class="section-title">Hobbies</h2>
-        <div class="hobbies">
-          <div>
-            <img src="spraycan.png" alt="Drawing">
-            <p>Draw</p>
-          </div>
-          <div>
-            <img src="game.png" alt="Gaming">
-            <p>Game</p>
-          </div>
-          <div>
-            <img src="skateboard.png" alt="Skateboarding">
-            <p>Skateboard</p>
-          </div>
-        </div>
-        <div class="separator"></div>
-      </section>
 
-      <!-- Contact Me Section -->
       <section>
-        <h2 class="section-title">Contact Me</h2>
-        <div class="section-separator"></div>
-        <div class="contact-me">
-          <div>
-            <img src="email.png" alt="Email">
-            <p>dajiboye@gmail.com</p>
-          </div>
-          <div>
-            <img src="instagram.png" alt="Instagram">
-            <p>oyedolapoajiboye</p>
-          </div>
-          <div>
-            <img src="linkedin.png" alt="LinkedIn">
-            <p>oyeD18</p>
-          </div>
+        <h2>Made on Blender</h2>
+        <div class="image-container">
+          <img src="fries.png" alt="3d1">
+          <img src="donuts.jpg" alt="3d2">
+          <img src="tea cup.png" alt="3d4">
+          <img src="petals.png" alt="3d5">
+          <img src="Flowers in a jar.png" alt="3d6">
         </div>
-        <div class="section-separator"></div>
+      </section>
+      
+      <section>
+        <h2>Works in progress</h2>
+        <div class="image-container">
+          <img src="msword.png" alt="3d3">
+          <img src="BMO.png" alt="3d7">
+        </div>
       </section>
     </div>
   </body>
