@@ -5,8 +5,7 @@
     <title>Animations</title>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Italianno&display=swap" rel="stylesheet">
-
-        <style>
+    <style>
       body {
         color: #666666;
         background-color: #FDC56A;
@@ -60,19 +59,13 @@
         color: #FDC56A;
       }
 
-      .image-container img {
+      .video-container video {
         width: 70%;
-        height: auto;
+        max-width: 800px;
         border: 2px solid #000;
         border-radius: 5px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        margin: 7;
-      }
-
-      .image-container img:hover {
-        transform: scale(1.05);
-        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.3);
+        margin: 15px 0;
       }
     </style>
   </head>
@@ -95,21 +88,16 @@
       </div>
 
       <section>
-        <h2>Made on Blender</h2>
-        <div class="image-container">
-          <img src="fries.png" alt="3d1">
-          <img src="donuts.jpg" alt="3d2">
-          <img src="tea cup.png" alt="3d4">
-          <img src="petals.png" alt="3d5">
-          <img src="Flowers in a jar.png" alt="3d6">
-        </div>
-      </section>
-      
-      <section>
-        <h2>Works in progress</h2>
-        <div class="image-container">
-          <img src="msword.png" alt="3d3">
-          <img src="BMO.png" alt="3d7">
+        <div class="video-container">
+          <video controls>
+            <source src="Walk Cycle.mp4" type="video/mp4">
+          </video>
+          <video controls>
+            <source src="Maze.mp4" type="video/mp4">
+          </video>
+          <video controls>
+            <source src="The Luddy.mp4" type="video/mp4">
+          </video>
         </div>
       </section>
     </div>
